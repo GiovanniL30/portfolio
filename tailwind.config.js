@@ -9,6 +9,7 @@ export default {
         primary: "#D3E97A",
         neutral_dark_grey: "#222222",
         dark_grey: "#1A1A1A",
+        line_color: "#484848",
       },
       fontFamily: {
         Bebas: ['"Bebas Neue"', "serif"],
