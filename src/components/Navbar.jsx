@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
 
   const toggleNav = () => {
     setOpen((prev) => !prev);
@@ -22,20 +23,30 @@ const Navbar = () => {
           open ? "translate-x-0" : "translate-x-[200%]"
         } md:translate-x-0 md:gap-10 transition-all duration-500 ease-linear`}
       >
-        <li>
-          <ScrollLink to="work" smooth={true} duration={500}>
-            <p>Work</p>
-          </ScrollLink>
-        </li>
+        {location.pathname === "/" ? (
+          <>
+            <li>
+              <ScrollLink to="work" smooth={true} duration={500}>
+                <p>Work</p>
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink to="contact" smooth={true} duration={500}>
+                <p>Contact</p>
+              </ScrollLink>
+            </li>
+          </>
+        ) : (
+          <li>
+            <Link to="/">
+              <p>Home</p>
+            </Link>
+          </li>
+        )}
         <li>
           <Link to="/about">
             <p>About</p>
           </Link>
-        </li>
-        <li>
-          <ScrollLink to="contact" smooth={true} duration={500}>
-            <p>Contact</p>
-          </ScrollLink>
         </li>
       </ul>
       <Hamburger toggleNav={toggleNav} />
