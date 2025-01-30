@@ -12,3 +12,9 @@ body {
   background-color: rgb(3.92% 3.92% 3.92%);
   color: rgb(78.04% 78.04% 78.04%);
 }
+
+@layer components {
+  .max-container {
+    @apply py-5 max-w-[1440px] mx-auto;
+  }
+}

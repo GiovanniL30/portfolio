@@ -5,8 +5,8 @@ import IconButton from "../../../components/IconButton.jsx";
 
 const Hero = () => {
   return (
-    <div className="px-5 h-screen w-full">
-      <div className="w-full h-full flex flex-col md:flex-row md:items-center md:justify-center md:gap-10 ">
+    <div className="px-5 h-screen w-full max-container">
+      <div className="w-full h-full flex flex-col md:flex-row md:items-center md:justify-between  md:gap-10 ">
         <div className="flex flex-col gap-6">
           <div>
             <h1 className="font-Bebas text-7xl text-white">
@@ -16,11 +16,7 @@ const Hero = () => {
           </div>
 
           <div className="flex items-center gap-5 mt-6">
-            <Button
-              text="CONTACT ME"
-              buttonStyle="max-w-[220px] w-fit px-4 items-center gap-2 py-2 md:justify-between md:px-10"
-              textStyle="font-semibold"
-            >
+            <Button text="CONTACT ME" buttonStyle="max-w-[220px] items-center gap-2 py-2 md:justify-between md:px-10" textStyle="font-semibold">
               <div className="-mr-2 w-8 h-8 bg-bg_color flex justify-center items-center rounded-full">
                 <img className="h-fit" src={white_arrow} alt="" />
               </div>

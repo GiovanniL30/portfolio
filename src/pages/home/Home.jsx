@@ -5,10 +5,11 @@ import Projects from "./sections/Projects";
 
 const Home = () => {
   return (
-    <section>
+    <section className="w-full">
       <Hero />
-      <hr className="bg-line_color" />
+      <hr className="border-line_color w-full" />
       <Projects />
+      <hr className="border-line_color w-full" />
       <About />
     </section>
   );

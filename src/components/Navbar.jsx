@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="max-w-[1800px] mx-auto fixed top-0 bg-bg_color h-[80px] px-5 overflow-hidden flex justify-between w-full items-center">
+    <nav className="z-50 max-container left-1/2 -translate-x-1/2 fixed top-0 bg-bg_color h-[80px] px-5 overflow-hidden flex justify-between w-full items-center">
       <div className="w-full">
         <Link to="/">
           <p className="font-bold text-2xl font-Bebas tracking-wider">Giovanni Leo</p>
