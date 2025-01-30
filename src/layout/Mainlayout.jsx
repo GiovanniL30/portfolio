@@ -9,6 +9,7 @@ const Mainlayout = () => {
       <Navbar />
       <div className="mt-[110px] md:mt-[0px]">
         <Outlet />
+        <hr className="border-line_color w-full" />
         <Footer />
       </div>
     </main>

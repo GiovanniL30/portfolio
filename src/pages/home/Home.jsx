@@ -9,7 +9,7 @@ const Home = () => {
       <Hero />
       <hr className="border-line_color w-full" />
       <Projects />
-      <hr className="border-line_color w-full" />
+      <hr className="border-line_color w-full mt-20" />
       <About />
     </section>
   );

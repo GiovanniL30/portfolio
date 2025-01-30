@@ -35,7 +35,7 @@ const Hero = () => {
         </div>
         <div className="mt-16 md:mt-0">
           <div className="bg-off_white w-full h-full rounded-md">
-            <img src={my_image} alt="" />
+            <img className="object-cover max-w-full" src={my_image} alt="" />
           </div>
         </div>
       </div>

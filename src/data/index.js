@@ -1,4 +1,4 @@
-import { aeiluminate_ss, furniro_ss, personal_ss, techwonder_ss } from "../assets/index.js";
+import { aeiluminate_ss, furniro_ss, personal_ss, techwonder_ss, github, instagram, linkedin } from "../assets/index.js";
 
 export const projects = [
   {
@@ -48,6 +48,19 @@ export const projects = [
 
 export const experience = [{}];
 
-export const socialLinks = [{}];
+export const socialLinks = [
+  {
+    link: "www.linkedin.com/in/giovanni-leo-4774ab255",
+    icon: linkedin,
+  },
+  {
+    link: "https://github.com/GiovanniL30",
+    icon: github,
+  },
+  {
+    link: "https://www.instagram.com/g.leo__/",
+    icon: instagram,
+  },
+];
 
 export const capabilities = [];

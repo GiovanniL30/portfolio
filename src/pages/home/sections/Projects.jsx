@@ -7,7 +7,7 @@ const Projects = () => {
     <div id="work" className="px-5 pt-[100px] max-container">
       <div className="w-full h-full">
         <div>
-          <h1 className="font-Bebas text-white text-6xl">Featured Projects</h1>
+          <h1 className="font-Bebas text-white text-6xl md:text-7xl">Featured Projects</h1>
           <p className="mt-2">Here are some of the selected projects that showcase my passion for web development.</p>
         </div>
         <div className="flex flex-col gap-32 mt-32 ">

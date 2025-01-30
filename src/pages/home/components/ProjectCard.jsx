@@ -31,7 +31,7 @@ const ProjectInformation = ({ title, description, year, tech, github, live }) =>
     <div className="flex flex-col gap-5 md:w-1/2 lg:gap-8">
       <div className="flex flex-col gap-2">
         <h1 className="text-white text-3xl">{title}</h1>
-        <p className="text-sm md:text-md">{description}</p>
+        <p>{description}</p>
       </div>
       <div className="flex flex-col gap-3">
         <h2 className="uppercase text-white text-md">Project Info</h2>
