@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
-    <div className="max-container">
+    <div className="max-container mt-10">
       <div className="px-5">
         <div className="flex flex-col md:flex-row gap-5">
           <motion.h1

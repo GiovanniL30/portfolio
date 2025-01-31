@@ -43,7 +43,7 @@ const SkillContainer = ({ title, children }) => {
 const SkillTag = ({ text }) => {
   return (
     <motion.div
-      className="flex items-center justify-end border-[0.5px] border-neutral_dark_grey py-3 px-5 rounded-full"
+      className=" flex items-center justify-end border-[0.5px] border-neutral_dark_grey py-3 px-5 rounded-full"
       initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.3, ease: "easeOut" }}

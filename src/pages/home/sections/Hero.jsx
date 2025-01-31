@@ -2,17 +2,23 @@ import React from "react";
 import { my_image, white_arrow, linkedin, github } from "../../../assets/index.js";
 import Button from "../../../components/Button.jsx";
 import IconButton from "../../../components/IconButton.jsx";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const Hero = () => {
+  const { scrollYProgress } = useScroll();
+
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 2]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, 700]);
+
   return (
     <div className="px-5 h-screen w-full max-container">
-      <div className="w-full h-full flex flex-col md:flex-row md:items-center md:justify-between  md:gap-10 ">
+      <div className="w-full h-full flex flex-col md:flex-row md:items-center md:justify-between md:gap-10">
         <div className="flex flex-col gap-6">
           <div>
             <h1 className="font-Bebas text-7xl text-white">
               HI, I AM <br /> Giovanni Leo.
             </h1>
-            <p>Baguio City based full-stack developer passionate about building accessible and user friendly websites.</p>
+            <p>Baguio City based full-stack developer passionate about building accessible and user-friendly websites.</p>
           </div>
 
           <div className="flex items-center gap-5 mt-6">
@@ -33,10 +39,11 @@ const Hero = () => {
             </IconButton>
           </div>
         </div>
+
         <div className="mt-16 md:mt-0">
-          <div className="bg-off_white w-full h-full rounded-md">
+          <motion.div className="bg-off_white w-full h-full rounded-md" style={{ scale, y }}>
             <img className="object-cover max-w-full" src={my_image} alt="" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

@@ -2,18 +2,26 @@ import React from "react";
 import About from "../../components/About";
 import Button from "../../components/Button";
 import IconButton from "../../components/IconButton";
-import MyImage from "./components/MyImage";
 import { download, linkedin, github } from "../../assets";
 import Capabilities from "./section/Capabilities";
 import Experience from "./section/Experience";
 import PageTransition from "../../components/PageTransition";
+import Line from "../../components/Line";
+import { motion } from "framer-motion";
+import ImageParalax from "./components/ImageParalax";
 
 const AboutPage = () => {
   return (
     <PageTransition>
       <section className="w-full mt-[110px] pb-10">
-        <About>
-          <div className="flex flex-wrap items-center gap-5 mt-6">
+        <About containerStyle="mt-32 mb-32">
+          <motion.div
+            className="flex flex-wrap items-center gap-5 mt-6"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2 }}
+            viewport={{ amount: 0.2 }}
+          >
             <Button
               text="DOWNLOAD RESUME"
               buttonStyle=" px-3 max-w-fit  items-center gap-2 py-2 md:justify-between md:px-5"
@@ -33,11 +41,11 @@ const AboutPage = () => {
                 <img src={github} alt="" />
               </a>
             </IconButton>
-          </div>
+          </motion.div>
         </About>
-        <MyImage />
+        <ImageParalax />
         <Capabilities />
-        <hr className="border-line_color w-full my-20" />
+        <Line style="mt-10" />
         <Experience />
       </section>
     </PageTransition>

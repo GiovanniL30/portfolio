@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="max-container flex justify-between items-center">
         <div className="w-full">
           <Link to="/">
-            <p className="font-bold text-2xl font-Bebas tracking-wider">Giovanni Leo</p>
+            <p className="font-bold text-2xl font-Bebas tracking-wider ">Giovanni Leo</p>
           </Link>
         </div>
 
@@ -84,15 +84,15 @@ const Hamburger = ({ toggleNav }) => {
 
 const NavItemLink = ({ to, label, onClick }) => (
   <li>
-    <Link to={to} onClick={onClick}>
-      <p>{label}</p>
+    <Link className="cursor-pointer hover:opacity-50 duration-500 ease-linear" to={to} onClick={onClick}>
+      <p className="hover-opacity">{label}</p>
     </Link>
   </li>
 );
 
 const NavItemScroll = ({ to, label, onClick }) => (
   <li>
-    <ScrollLink to={to} smooth={true} duration={500} onClick={onClick}>
+    <ScrollLink className="cursor-pointer hover:opacity-50 duration-500 ease-linear" to={to} smooth={true} duration={500} onClick={onClick}>
       <p>{label}</p>
     </ScrollLink>
   </li>

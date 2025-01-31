@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Outlet } from "react-router-dom";
+import Line from "../components/Line";
 
 const Mainlayout = () => {
   return (
@@ -9,7 +10,7 @@ const Mainlayout = () => {
       <Navbar />
       <div>
         <Outlet />
-        <hr className="border-line_color w-full" />
+        <Line />
         <Footer />
       </div>
     </main>

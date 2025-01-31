@@ -17,4 +17,8 @@ body {
   .max-container {
     @apply py-5 max-w-[1440px] mx-auto;
   }
+
+  .hover-opactity {
+    @apply hover:opacity-50 duration-500 ease-linear cursor-pointer;
+  }
 }

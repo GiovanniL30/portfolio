@@ -17,20 +17,20 @@ const Footer = () => {
             <div className="flex flex-col gap-1">
               <p>
                 Say hello at{" "}
-                <a className="relative" href="" target="_blank">
+                <a className="relative hover-opactity" href="" target="_blank">
                   giovannileo100@gmail.com <div className="absolute bg-primary w-full h-[0.5px] left-0"></div>
                 </a>
               </p>
               <p>
                 For more info, here's my{" "}
-                <a className="relative" href="" target="_blank">
+                <a className="relative hover-opactity" href="" target="_blank">
                   resume <div className="absolute bg-primary w-full h-[0.5px] left-0"></div>
                 </a>
               </p>
             </div>
             <div className="flex gap-7 items-center">
               {socialLinks.map((social, index) => (
-                <div key={index}>
+                <div className="hover-opactity" key={index}>
                   <a href={social.link} target="_blank">
                     <img src={social.icon} alt="" />
                   </a>
