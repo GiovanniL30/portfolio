@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const About = () => {
+const About = ({ children, containerStyle }) => {
   return (
-    <div className="px-5 h-screen max-container">
+    <div className={`px-5  max-container ${containerStyle}`}>
       <div className="w-full h-full flex flex-col gap-4 justify-center">
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 md:self-start">
@@ -17,12 +16,7 @@ const About = () => {
               and grow, exploring new technologies and best practices. Outside of programming, I enjoy playing playing games and watching during my
               free time. I'm excited about solving real-world problems through code and continuously improving my skills.
             </p>
-            <Link to="/about" className="cursor-pointer">
-              <div className="relative text-primary w-fit ">
-                <p className="uppercase">More about me</p>
-                <div className="w-full h-0.5 bg-primary"></div>
-              </div>
-            </Link>
+            {children}
           </div>
         </div>
       </div>

@@ -1,34 +1,22 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Mainlayout from "./layout/Mainlayout";
-import About from "./pages/about/About";
+import AboutPage from "./pages/about/AboutPage";
+import SmoothScrolling from "./components/SmoothScrooling";
 
 const App = () => {
-  useEffect(() => {
-    const handleScroll = (event) => {
-      event.preventDefault();
-      window.scrollBy({
-        top: event.deltaY * 3,
-        behavior: "smooth",
-      });
-    };
-
-    window.addEventListener("wheel", handleScroll, { passive: false });
-
-    return () => {
-      window.removeEventListener("wheel", handleScroll);
-    };
-  }, []);
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Mainlayout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <SmoothScrolling>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Mainlayout />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<AboutPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </SmoothScrolling>
   );
 };
 

@@ -8,48 +8,49 @@ const Navbar = () => {
 
   const toggleNav = () => {
     setOpen((prev) => !prev);
-    console.log(open);
   };
 
   return (
-    <nav className="z-50 max-container left-1/2 -translate-x-1/2 fixed top-0 bg-bg_color h-[80px] px-5 overflow-hidden flex justify-between w-full items-center">
-      <div className="w-full">
-        <Link to="/">
-          <p className="font-bold text-2xl font-Bebas tracking-wider">Giovanni Leo</p>
-        </Link>
-      </div>
-      <ul
-        className={`w-full flex justify-end ${
-          open ? "translate-x-0" : "translate-x-[200%]"
-        } md:translate-x-0 md:gap-10 transition-all duration-500 ease-linear`}
-      >
-        {location.pathname === "/" ? (
-          <>
+    <nav className="z-50 w-full fixed top-0 bg-bg_color h-[80px] px-5 overflow-hidden ">
+      <div className="max-container flex justify-between  items-center">
+        <div className="w-full">
+          <Link to="/">
+            <p className="font-bold text-2xl font-Bebas tracking-wider">Giovanni Leo</p>
+          </Link>
+        </div>
+        <ul
+          className={`w-full flex justify-end ${
+            open ? "translate-x-0" : "translate-x-[200%]"
+          } md:translate-x-0 md:gap-10 transition-all duration-500 ease-linear`}
+        >
+          {location.pathname === "/" ? (
+            <>
+              <li>
+                <ScrollLink to="work" smooth={true} duration={500}>
+                  <p>Work</p>
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink to="contact" smooth={true} duration={500}>
+                  <p>Contact</p>
+                </ScrollLink>
+              </li>
+            </>
+          ) : (
             <li>
-              <ScrollLink to="work" smooth={true} duration={500}>
-                <p>Work</p>
-              </ScrollLink>
+              <Link to="/">
+                <p>Home</p>
+              </Link>
             </li>
-            <li>
-              <ScrollLink to="contact" smooth={true} duration={500}>
-                <p>Contact</p>
-              </ScrollLink>
-            </li>
-          </>
-        ) : (
+          )}
           <li>
-            <Link to="/">
-              <p>Home</p>
+            <Link to="/about">
+              <p>About</p>
             </Link>
           </li>
-        )}
-        <li>
-          <Link to="/about">
-            <p>About</p>
-          </Link>
-        </li>
-      </ul>
-      <Hamburger toggleNav={toggleNav} />
+        </ul>
+        <Hamburger toggleNav={toggleNav} />
+      </div>
     </nav>
   );
 };

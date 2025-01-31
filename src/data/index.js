@@ -46,7 +46,14 @@ export const projects = [
   },
 ];
 
-export const experience = [{}];
+export const experience = [
+  {
+    title: "BSIT Student",
+    location: "Saint Louis University - Baguio",
+    description: "I am currently a regular 3rd-year BSIT student and a self-taught programmer who began learning programming during my first years.",
+    year: "2023 - Present",
+  },
+];
 
 export const socialLinks = [
   {
@@ -63,4 +70,21 @@ export const socialLinks = [
   },
 ];
 
-export const capabilities = [];
+export const capabilities = [
+  {
+    title: "Frontend Development",
+    skills: ["React JS", "HTML", "CSS", "Tailwind CSS", "Framer Motion"],
+  },
+  {
+    title: "Backend Development",
+    skills: ["MySQL", "Node JS", "Express JS"],
+  },
+  {
+    title: "Tools and Services",
+    skills: ["Supabase", "App Write", "VsCode", "Git", "Github", "Figma", "Postman", "Vite"],
+  },
+  {
+    title: "Programming Languages",
+    skills: ["Python", "Javascript", "Java", "TypeScript"],
+  },
+];

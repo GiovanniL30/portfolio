@@ -7,7 +7,7 @@ const Mainlayout = () => {
   return (
     <main>
       <Navbar />
-      <div className="mt-[110px] md:mt-[0px]">
+      <div>
         <Outlet />
         <hr className="border-line_color w-full" />
         <Footer />
