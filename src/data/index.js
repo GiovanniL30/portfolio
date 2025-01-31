@@ -51,13 +51,13 @@ export const experience = [
     title: "BSIT Student",
     location: "Saint Louis University - Baguio",
     description: "I am currently a regular 3rd-year BSIT student and a self-taught programmer who began learning programming during my first years.",
-    year: "2023 - Present",
+    year: "2022 - Present",
   },
 ];
 
 export const socialLinks = [
   {
-    link: "www.linkedin.com/in/giovanni-leo-4774ab255",
+    link: "https://www.linkedin.com/in/giovanni-leo-4774ab255/",
     icon: linkedin,
   },
   {

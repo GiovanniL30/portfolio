@@ -25,10 +25,10 @@ const Projects = () => {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
-              whileOutOfView={{ opacity: 0, y: 50 }}
-              transition={{ duration: 0.8 }}
+              whileOutOfView={{ opacity: 0, y: 100 }}
+              transition={{ duration: 1.5 }}
             >
               <ProjectCard
                 title={project.title}

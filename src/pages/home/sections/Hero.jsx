@@ -7,8 +7,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const Hero = () => {
   const { scrollYProgress } = useScroll();
 
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 2]);
-  const y = useTransform(scrollYProgress, [0, 1], [0, 700]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, 1000]);
 
   return (
     <div className="px-5 h-screen w-full max-container">
@@ -28,12 +27,12 @@ const Hero = () => {
               </div>
             </Button>
             <IconButton buttonStyle="h-12 w-12">
-              <a href="" target="_blank">
+              <a href="https://www.linkedin.com/in/giovanni-leo-4774ab255/" target="_blank">
                 <img src={linkedin} alt="" />
               </a>
             </IconButton>
             <IconButton buttonStyle="h-12 w-12">
-              <a href="" target="_blank">
+              <a href="https://github.com/GiovanniL30" target="_blank">
                 <img src={github} alt="" />
               </a>
             </IconButton>
@@ -41,7 +40,7 @@ const Hero = () => {
         </div>
 
         <div className="mt-16 md:mt-0">
-          <motion.div className="bg-off_white w-full h-full rounded-md" style={{ scale, y }}>
+          <motion.div className="bg-off_white w-full h-full rounded-md" style={{ y }}>
             <img className="object-cover max-w-full" src={my_image} alt="" />
           </motion.div>
         </div>

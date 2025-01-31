@@ -1,18 +1,14 @@
-import React from "react";
-import { motion } from "framer-motion";
-
-const Button = ({ text, type = "button", onClick, children, buttonStyle, textStyle }) => {
+const Button = ({ text, type = "button", onClick, children, buttonStyle, textStyle, disabled = false }) => {
   return (
-    <motion.button
-      whileHover={{ scale: 0.95, opacity: 0.8 }}
-      transition={{ duration: 0.2 }}
+    <button
+      disabled={disabled}
       type={type}
       onClick={onClick}
-      className={`flex justify-center w-full bg-primary rounded-3xl ${buttonStyle}`}
+      className={`flex justify-center w-full bg-primary rounded-3xl cursor-pointer hover:opacity-50 duration-500 ease-linear ${buttonStyle}`}
     >
       <p className={`text-bg_color text-nowrap ${textStyle}`}>{text}</p>
       {children}
-    </motion.button>
+    </button>
   );
 };
 

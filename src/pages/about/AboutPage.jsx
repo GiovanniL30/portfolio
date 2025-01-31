@@ -32,12 +32,12 @@ const AboutPage = () => {
               </div>
             </Button>
             <IconButton buttonStyle="h-12 w-12">
-              <a href="" target="_blank">
+              <a href="https://www.linkedin.com/in/giovanni-leo-4774ab255/" target="_blank">
                 <img src={linkedin} alt="" />
               </a>
             </IconButton>
             <IconButton buttonStyle="h-12 w-12">
-              <a href="" target="_blank">
+              <a href="https://github.com/GiovanniL30" target="_blank">
                 <img src={github} alt="" />
               </a>
             </IconButton>
