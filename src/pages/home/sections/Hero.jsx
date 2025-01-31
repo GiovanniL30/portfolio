@@ -21,7 +21,14 @@ const Hero = () => {
           </div>
 
           <div className="flex items-center gap-5 mt-6">
-            <Button text="CONTACT ME" buttonStyle="max-w-[220px] items-center gap-2 py-2 md:justify-between md:px-10" textStyle="font-semibold">
+            <Button
+              onClick={() => {
+                document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+              }}
+              text="CONTACT ME"
+              buttonStyle="max-w-[220px] items-center gap-2 py-2 md:justify-between md:px-10"
+              textStyle="font-semibold"
+            >
               <div className="-mr-2 w-8 h-8 bg-bg_color flex justify-center items-center rounded-full">
                 <img className="h-fit" src={white_arrow} alt="" />
               </div>

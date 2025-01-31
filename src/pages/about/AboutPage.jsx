@@ -23,6 +23,7 @@ const AboutPage = () => {
             viewport={{ amount: 0.2 }}
           >
             <Button
+              onClick={() => (window.location.href = "https://drive.google.com/uc?export=download&id=1A6jVahdAOiVD_3FaDcXa4f2xhzadtnC7")}
               text="DOWNLOAD RESUME"
               buttonStyle=" px-3 max-w-fit  items-center gap-2 py-2 md:justify-between md:px-5"
               textStyle="font-semibold"
