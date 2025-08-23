@@ -1,6 +1,17 @@
-import { aeiluminate_ss, furniro_ss, personal_ss, techwonder_ss, github, instagram, linkedin } from "../assets/index.js";
+import { aeiluminate_ss, furniro_ss, personal_ss, techwonder_ss, github, instagram, linkedin, cca_ss } from "../assets/index.js";
 
 export const projects = [
+  {
+    title: "Ticketing System for the Center for Culture and the Arts - (Ongoing)",
+    description:
+      "Leading the development of a role-based ticket monitoring system for managing shows, schedules, ticket distribution, and audience records. The system supports digital ticket generation, seat mapping, and automated sales reporting. Following an iterative approach, our team regularly collaborates with stakeholders to gather feedback and ensure the system aligns with operational workflows.",
+    year: "2025 - Ongoing",
+    tech: ["React", "Tailwind CSS", "Express", "Prisma", "MySql"],
+    github: "https://github.com/orgs/Dormmates/repositories",
+    live: null,
+    cover: cca_ss,
+    tags: ["Capstone Project"],
+  },
   {
     title: "Personal Protfolio",
     description:
@@ -77,7 +88,7 @@ export const capabilities = [
   },
   {
     title: "Backend Development",
-    skills: ["MySQL", "Node JS", "Express JS"],
+    skills: ["MySQL", "Node JS", "Express JS", "Prisma"],
   },
   {
     title: "Tools and Services",

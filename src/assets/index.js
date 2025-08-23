@@ -11,6 +11,7 @@ import aeiluminate_ss from "./projects/aeiluminate-ss.png";
 import furniro_ss from "./projects/furniro-ss1.png";
 import personal_ss from "./projects/personal.png";
 import techwonder_ss from "./projects/techwonder.png";
+import cca_ss from "./projects/cca-ss.png";
 
 export {
   about_image,
@@ -25,4 +26,5 @@ export {
   furniro_ss,
   personal_ss,
   techwonder_ss,
+  cca_ss,
 };

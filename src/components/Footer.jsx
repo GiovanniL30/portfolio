@@ -91,7 +91,7 @@ const Footer = () => {
               <p>
                 For more info, here's my{" "}
                 <a
-                  href="https://drive.google.com/file/d/1A6jVahdAOiVD_3FaDcXa4f2xhzadtnC7/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1lI70ATJNyV4sICsTMWVglAFFoZzSfCmI/view?usp=sharing"
                   target="_blank"
                   className="border-b-primary border-b-2"
                 >
