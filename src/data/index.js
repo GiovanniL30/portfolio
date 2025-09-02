@@ -30,7 +30,7 @@ export const projects = [
     year: 2024,
     tech: ["Node JS", "React JS", "Express JS", "MySql"],
     github: "https://github.com/GiovanniL30/aeiluminate-alumni",
-    live: "https://aeiluminate.onrender.com",
+    live: "https://aeiluminate.vercel.app",
     cover: aeiluminate_ss,
     tags: ["School Project"],
   },
