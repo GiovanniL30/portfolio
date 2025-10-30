@@ -30,7 +30,7 @@ export const projects = [
     year: 2024,
     tech: ["Node JS", "React JS", "Express JS", "MySql"],
     github: "https://github.com/GiovanniL30/aeiluminate-alumni",
-    live: "https://aeiluminate.vercel.app",
+    // live: "https://aeiluminate.vercel.app",
     cover: aeiluminate_ss,
     tags: ["School Project"],
   },
@@ -61,7 +61,7 @@ export const experience = [
   {
     title: "BSIT Student",
     location: "Saint Louis University - Baguio",
-    description: "I am currently a regular 3rd-year BSIT student and a self-taught programmer who began learning programming during my first years.",
+    description: "I am currently a regular 4th-year BSIT student and a self-taught programmer who began learning programming during my first years.",
     year: "2022 - Present",
   },
 ];
